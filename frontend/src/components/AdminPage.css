@@ -1,0 +1,137 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Container for the whole AdminPage */
+  .admin-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* Page title */
+  h2 {
+    text-align: center;
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    color: #444;
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  
+  /* Styling for individual customer orders */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background-color: #f9f9f9;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  li h4 {
+    font-size: 22px;
+    color: #007BFF;
+  }
+  
+  strong {
+    font-weight: bold;
+  }
+  
+  button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #c0392b;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  button:active {
+    background-color: #b03426;
+  }
+  
+  /* Empty state message */
+  p {
+    text-align: center;
+    color: #888;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  /* Styles for orders list */
+  ul > li {
+    margin-top: 15px;
+  }
+  
+  span {
+    margin-right: 10px;
+  }
+  
+  .order-item {
+    display: inline-block;
+    background-color: #eaf1f9;
+    padding: 6px 12px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Styling for the customer section */
+  .customer-section {
+    padding-left: 20px;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .admin-container {
+      padding: 15px;
+      margin: 20px;
+    }
+  
+    h2 {
+      font-size: 28px;
+    }
+  
+    h3 {
+      font-size: 24px;
+    }
+  
+    li {
+      padding: 10px;
+    }
+  
+    button {
+      padding: 6px 10px;
+      font-size: 12px;
+    }
+  }
+   

@@ -1,0 +1,87 @@
+/* Add a global style for body */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  /* Container for the MenuCard */
+  h1 {
+    font-size: 2.5rem;
+    color: #d9534f; /* A bold red for the restaurant name */
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 700;
+  }
+  
+  /* Menu heading */
+  h3 {
+    font-size: 1.8rem;
+    color: #5a5a5a;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+  }
+  
+  /* Style for the menu items */
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Style each menu item */
+  li {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 25px;
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect for each menu item */
+  li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Style for the Order button */
+  button {
+    background-color: #5cb85c;
+    color: white;
+    font-size: 1rem;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  /* Hover effect for the button */
+  button:hover {
+    background-color: #4cae4c;
+  }
+  
+  /* Add some padding for small screens */
+  @media (max-width: 768px) {
+    ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    li {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+  
