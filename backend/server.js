@@ -7,11 +7,9 @@ const http = require('http');
 const { Server } = require('socket.io');
 const path = require('path');
 
+
+
 const _dirname = path.resolve();
-
-const menuRoutes = require('./routes/menuRoutes');
-const orderRoutes = require('./routes/orderRoutes');
-
 
 
 const app = express();
