@@ -11,7 +11,7 @@ const MenuCard = () => {
   
     useEffect(() => {
       const fetchMenu = async () => {   //https://hotel-management-app-backend.vercel.app/
-        const response = await axios.get("http://localhost:5000/api/menu");
+        const response = await axios.get("https://hotel-management-100.onrender.com/api/menu");
         setMenu(response.data);
       };
       fetchMenu();
@@ -28,7 +28,7 @@ const MenuCard = () => {
       console.log("Placing order:", order); // Log order for debugging
     //   addOrder(order);
   
-      const response = await axios.post("http://localhost:5000/api/orders", order);
+      const response = await axios.post("https://hotel-management-100.onrender.com/api/orders", order);
     //   alert(`Order placed successfully! Order ID: ${response.data._id}`);
         toast.success(`Order placed successfully! Order ID: ${response.data._id}`);
     };
