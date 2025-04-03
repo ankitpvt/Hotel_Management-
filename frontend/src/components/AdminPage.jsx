@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import './AdminPage.css';
 // import { ToastContainer, toast } from 'react-toastify';
 // import 'react-toastify/dist/ReactToastify.css';  // Import the CSS for Toastify
-import { io } from "socket.io-client";
-const socket = io('https://hotel-management-100.onrender.com');
+// import { io } from "socket.io-client";
+// const socket = io('https://hotel-management-100.onrender.com');
 const AdminPage = () => {
   const [orders, setOrders] = useState([]); // State for orders
 
@@ -36,7 +36,7 @@ const AdminPage = () => {
   const deleteOrder = async (orderId) => {
     console.log('Deleting order with ID:', orderId); // Log the orderId
 
-    try {              //https://hotel-management-app-backend.vercel.app/
+    try {             
       await axios.delete(`https://hotel-management-100.onrender.com/api/orders/${orderId}`);
       // Remove the deleted order from the state
       setOrders((prevOrders) => prevOrders.filter(order => order._id !== orderId));

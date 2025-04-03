@@ -15,7 +15,7 @@ const menuRoutes = require('./routes/menuRoutes');
 const orderRoutes = require('./routes/orderRoutes');
 
 const corsOptions = {
-    origin: 'https://hotel-management-100.onrender.com',
+    origin: 'http://localhost:5000',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true,
