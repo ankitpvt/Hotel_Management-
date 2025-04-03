@@ -6,6 +6,7 @@ import './AdminPage.css';
 // import 'react-toastify/dist/ReactToastify.css';  // Import the CSS for Toastify
 // import { io } from "socket.io-client";
 // const socket = io('https://hotel-management-100.onrender.com');
+
 const AdminPage = () => {
   const [orders, setOrders] = useState([]); // State for orders
 
@@ -21,13 +22,14 @@ const AdminPage = () => {
     };
 
     fetchOrders();  // Call the function to fetch orders
-    socket.on('newOrder', (newOrder) => {
-        setOrders((prevOrders) => [...prevOrders, newOrder]);
-        alert(`New order received from ${newOrder.customerName}!`);
-      });
+    
+    // socket.on('newOrder', (newOrder) => {
+    //     setOrders((prevOrders) => [...prevOrders, newOrder]);
+    //     alert(`New order received from ${newOrder.customerName}!`);
+    //   });
 
       return () => {
-        socket.off('newOrder');
+        // socket.off('newOrder');
       };
 
   }, []);  // Empty dependency array to fetch only once on component mount
@@ -109,5 +111,3 @@ const AdminPage = () => {
 };
 
 export default AdminPage;
-
-
